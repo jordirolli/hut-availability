@@ -1,0 +1,17 @@
+{
+  "name": "hut-availability",
+  "version": "1.0.0",
+  "description": "Determines the availability for the Consell de Mallorca huts by web crawling its site on a daily bases. See https://caminsdepedra.conselldemallorca.cat/refugis",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=16.16.0"
+  },
+  "author": "jordirolli",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.14.25",
+    "serverless-esbuild": "^1.25.0"
+  }
+}

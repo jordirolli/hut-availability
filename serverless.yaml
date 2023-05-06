@@ -1,0 +1,16 @@
+service: hut-availability
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+
+functions:
+  hello:
+    handler: src/functions/index.hello
+    events:
+      # Invoke Lambda function every minute
+      - schedule: rate(1 minute) # cron(0 0 * * ? *) Every day
+
+plugins:
+  - serverless-esbuild
